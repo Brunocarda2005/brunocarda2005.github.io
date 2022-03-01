@@ -771,7 +771,7 @@ body {
 
   .footer {
 
-    bottom: 0;
+    top: 100vh;
     height: 200px;
     width: 100%;
   
