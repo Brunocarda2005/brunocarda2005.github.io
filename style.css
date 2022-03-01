@@ -1,0 +1,808 @@
+* {
+
+  border: border-box;
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+
+}
+
+body {
+
+  background: #1F2233;
+  width: 100%;
+  height: 500%;  
+  }
+
+
+/*photo important*/
+
+.filter {
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: .2;
+  width: 100vw;
+  height: 300px;
+  
+}
+
+.photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 300px;
+  z-index: -100;
+  
+}
+
+
+/* navegator */
+
+.nav {
+
+  width: 100vw ;
+  height: 40px ;
+  position: fixed;
+  box-shadow: 0 -20px 50px #000000;
+  backdrop-filter: blur(4px) ;
+  z-index: 100;
+}
+
+.name {
+
+  color: #FFFFFF   ;
+
+  position: fixed;
+  top: 20%;
+  left: 20px ;
+
+}
+
+.name b {
+  color: #F2665C ;
+}
+
+.nav-pc {
+  opacity: 0;
+  top: -100px;
+  position: absolute;
+}
+
+
+.list-movile {
+
+  backdrop-filter: blur(4px) ;
+  width: 20%;
+  height: 400px;
+  position: fixed;
+  top:40px;
+  left: 120%;
+  box-shadow: -10px 20px 30PX  #000000;
+  list-style: none;
+  padding: 7px 25px;
+  padding-top: 20px;
+  font-size: 16px;
+  border-radius: 10px ;
+  z-index: 1000;
+  opacity: 0;
+  text-align: right;
+
+
+}
+
+
+.fa-bars {
+
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  z-index: 100;
+
+
+}
+
+.list-movile a  {
+
+  color: #5AB5FF;
+
+}
+
+.list-movile a:focus {
+
+
+  border-bottom: 2px solid #F2665C;
+  padding: 4px ;
+  display: inline;
+  transition: .5s;
+
+
+
+}
+
+.list-movile a:hover {
+  
+  
+  border-bottom: 2px solid #F2665C;
+  padding: 4px ;
+  display: inline-block;
+  transition: .5s;
+  width: 100%;
+  transform: translateX(-13%) ;
+  
+  
+}
+
+
+
+.list-movile li {
+
+  margin-bottom: 50px;
+
+
+}
+
+
+.list-movile li:first-child {
+
+  margin-top: 30px;
+
+
+}
+
+
+.contenedor-nav:hover > .list-movile {
+
+  transition: all 1.5s;
+  transform: translate( -155%, 0);
+  opacity: 1;
+  
+}
+
+
+
+.logo{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin:auto;
+}
+
+.principal {
+  
+  display: block;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  margin: auto;
+  color: #5AB5FF;
+  font-size: 15px;
+
+}
+
+
+
+
+.name_complet b {
+  font-family: 'Press Start 2p' ;
+  color: #F2665C;
+}
+
+.name_complet {
+  margin: 20px 0;
+  font-family: 'Press Start 2p' ;
+}
+
+.presentation-litle {
+  font-size: 13px;
+}
+
+
+.presentation-littel {
+
+   color: #5AB5FF;
+}
+
+
+
+
+
+/* article1 */
+
+
+.tec-linea {
+  
+  background: #2D2F45 ;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 100% ;
+  height: 1.5px;
+}
+
+.technologies {
+  
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  top: 330px;
+  color:  #595B77 ;
+  
+  
+  
+}
+
+.technologies i {
+  
+  font-size: 20px;
+  background: #1F2233;
+  position: relative;
+  margin: 6px 20px;
+  
+}
+
+.technologies .div {
+  
+  background: #1F2233;
+  position: absolute;
+  
+}
+
+
+.article1 {
+  display: grid;
+  grid-row: 4;
+  grid-column: 2;
+  gap: 40px;
+  position: relative;
+  top: 35vh;
+  left: 20px;
+  width: 80%;
+  list-style: none;
+  
+}
+
+
+
+
+.title1 {
+  
+  grid-row: 1;
+  grid-column: 1;
+  font-family: 'Neonderthaw' ; 
+  color: #5AB5FF;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  font-size: 60px ;
+  border-bottom: 3px ridge #F2665C;
+  padding: 7px;
+  border-radius: 3px;
+
+}
+
+.presentation {
+
+  grid-row: 2;
+  grid-column: 1;
+  color: #7E8190 ;
+  display: inline-flex;
+  text-align: left;
+  border-left: 2px solid #F2665C;
+  padding: 14px;
+  margin: 20px 0;
+  backdrop-filter: blur(7px) ;
+
+
+}
+
+.features {
+  
+  grid-row: 3;
+  grid-column: 1;
+  width: 100%;
+  outline: 2px solid #F2665C;
+  border-radius: 7px;
+  
+}
+
+.features-list {
+  
+  width: 90%;
+  list-style: none;
+  padding: 15px;
+  
+}
+
+.features-list li {
+  margin: 10px 0;
+  color:  black;  
+  
+}
+
+.features-list b {
+  
+  color: #5AB5FF;
+  
+}
+
+
+
+.curriculum {
+
+  grid-row: 4;
+  grid-column: 1;
+  text-decoration: none;
+  text-align: center;
+  color: #F2665C;
+  border: 2px solid #F2665C ;
+  border-radius: 6px ;
+  padding: 7px  ;
+  margin-top: 40px; 
+  width: 30%;
+  position: absolute;
+
+}
+
+.curriculum:focus {
+  
+  border: 2PX solid #5AB5FF;
+  color: #5AB5FF;
+}
+
+
+
+/*article2*/
+
+#servis {
+  
+  position: absolute;
+  top: -10vh;
+  
+  
+  
+}
+
+.article2 {
+
+   position: relative;
+   top: 65vh;
+
+}
+
+
+.title2 {
+  
+  font-family: 'Neonderthaw';
+  font-size: 40px ;
+  color: #5AB5FF;
+  display: block;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #F2665C;
+  padding: 7px ;
+  border-radius: 1px;
+
+
+}
+
+.service {
+
+
+  position: relative;
+  top: 30px;
+
+}
+
+
+
+
+.service_disain {
+
+
+  padding: 10px;
+  margin: auto;
+  margin-top: 100px;
+  height: 150px;
+  width: 80%;
+  color: #F2665C;
+  border: 2px solid #5AB5FF;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px  #000000 ;
+
+}
+
+.service_disain i {
+
+  color: #5AB5FF;
+  font-size: 20px;
+
+}
+
+.servis_maintenace {
+
+  padding: 10px;
+  margin: auto;
+  margin-top: 100px ;
+  margin-bottom: 100px ;
+  height: 150px;
+  width: 80%;
+  color: #F2665C;
+  backdrop-filter: blur(4px);
+  border: 2px solid #5AB5FF;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px  #000000 ;
+
+
+}
+
+.servis_maintenace i {
+
+   color: #5AB5FF;
+   font-size: 20px;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer {
+
+  position: absolute;
+  top: 320vh;
+  width: 100%;
+  height: 200px;
+  background:  linear-gradient(#5AB5FF, #0065FF)  ;  ;
+}
+
+.programin {
+  
+  
+  background: url(important/programming.svg);
+  width: 100% ;
+  height: 80%;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 140%;
+  
+}
+
+.wave {
+
+  background: url(important/wave.svg);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 99%;
+
+
+}
+
+.fired {
+  
+  color:#595B77;
+  width: 90%;
+  text-align: center;
+  margin:auto;
+  display: block;
+  
+}
+
+.contact2 {
+  
+  
+  font-size: 14px;
+  color:#595B77;
+  text-align: center;
+  margin:auto;
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  
+}
+
+.contact2 a {
+  
+  color: #303030 ;
+  
+}
+
+
+.social {
+  
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  
+  
+}
+
+.fa-whatsapp {
+  
+  margin-right: 30px; 
+  
+  
+  
+}
+
+
+
+
+
+/*responsive*/
+
+@media(min-width: 600px) {
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .photo {
+    
+    height: 100vh;
+    width: 100% ;
+    z-index: -50;
+    
+    
+  }
+  
+  .filter {
+    
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+
+  .nav {
+    
+    height: 40px;
+    width: 100%;
+
+    
+  }
+  
+  .fa-bars {
+    
+    opacity: 0;
+    position: absolute;
+    top: 100em ;
+    
+  }
+  
+  .name {
+    
+    font-size: 20px;
+    
+  }
+  
+  .nav-pc {
+    
+    opacity: 1;
+    top: 10px;
+    right: -130px ;
+    z-index: 100;
+    font-size: 15px;
+    position: fixed;
+    width: 50%;
+  
+    
+  }
+  
+  .nav-pc a {
+    
+    margin: 0 10px;
+    color: #5AB5FF;
+    
+  }
+  
+  
+
+  .nav-pc a:focus {
+
+
+  border-bottom: 2px solid #F2665C;
+  padding: 4px ;
+  display: inline;
+  transition: .5s;
+
+
+
+  }
+
+  .nav-pc a:hover {
+  
+  
+  border-bottom: 2px solid #F2665C;
+  padding: 2px ;
+  display: inline-block;
+  transition: .5s;
+  width: 20%;
+  text-align: right;
+  transform: translateX(10%) ;
+  
+  }
+  
+  .nav-pc:hover {
+    
+    right: -65px;
+    
+    
+  }
+
+  .principal {
+    top: 30vh;
+  }
+
+  .logo {
+  
+    height: 170px;
+    width: 170px;
+  
+  }
+
+  .name_complet{
+  
+    font-size: 30px;
+    margin-top: 40PX;
+  }
+  
+  .technologies {
+    
+    top: 102vh;
+    
+  }
+  
+  .tec-linea {
+    top: 18px;
+  }
+  
+  .technologies i {
+    
+    font-size: 30px;
+    
+  }
+  
+  .article1 {
+    
+    top: 90vh;
+    left: 50px;
+    width: 90%;
+  
+  }
+  
+  .title1 {
+    
+    width: 60%;  
+    font-size: 30px;
+    
+  }
+  
+  .presentation {
+    
+    width: 60%;
+    font-size: 15px;
+    padding: 10px;
+    
+  } 
+  
+  .curriculum {
+    
+    width: 10%;
+    font-size: 15px;
+    padding: 7px;
+
+  }
+
+  .article2 {
+
+    top: 100vh;
+    
+  }
+
+  .title2 {
+
+    font-size: 30px;
+    
+  }
+
+  .service {
+    
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+  
+   
+
+  }
+
+  .service_disain ,
+   .servis_maintenace {
+    
+    
+    height: 40vh;
+    width: 30%;
+    margin: 20px;
+    font-size: 15px;
+    padding: 20px;
+    
+    
+
+  }
+
+  .service_disain i , 
+   .servis_maintenace i {
+   
+    
+    font-size: 25px;
+    margin: 20px 0;
+
+   }
+
+   .service_disain h4 , 
+   .servis_maintenace h4 {
+   
+    margin: 20px 0;
+
+   }
+
+   
+  .service_disain p , 
+  .servis_maintenace p {
+  
+  margin: 20px 0;
+   
+  }
+
+  
+
+
+  .footer {
+
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+  
+  }
+
+  .programin {
+    bottom:500px;
+    width: 100%;
+    height: 300px;
+  
+
+  }
+
+  
+
+  .wave {
+    
+    height: 200px ;
+    width: 100%;
+    
+  }
+  
+  
+}
+
+
+
