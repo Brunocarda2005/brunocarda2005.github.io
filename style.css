@@ -623,11 +623,11 @@ body {
 
   .nav-pc a:hover {
     
-    border-bottom: 2px solid #F2665C;
+    border-bottom: 2.5px solid #F2665C;
     width: 20%;
     text-align: right;
     animation-name: border ;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
     
     
@@ -636,8 +636,8 @@ body {
   
   @keyframes border {
      
-    0%{ width: 10%;}
-    100%{ width: 20%;}
+    0% { width: 15%;}
+    100% { width: 20%;}
   }
 
   .principal {
