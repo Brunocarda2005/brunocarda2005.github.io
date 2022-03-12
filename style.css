@@ -636,8 +636,8 @@ body {
   
   @keyframes border {
      
-    0% { width: 15%;}
-    100% { width: 20%;}
+    0% { width: 20%;}
+    100% { width: 25%;}
   }
 
   .principal {
