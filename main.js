@@ -9,7 +9,7 @@ cv.addEventListener("click" , curriculum);
 
 function curriculum (){
     
-    let confirmo = confirm( "Do you want this resume in English?");
+    let confirmo = alert( "Do you want this resume in English?");
     if (confirmo == false) {
     
       cv.setAttribute("href" , "cv español.docx");
