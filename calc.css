@@ -1,0 +1,121 @@
+* {
+  
+ font-family: 'Poppins';  
+  
+  
+}
+
+body {
+    
+    
+    background: #FF0000c2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+  
+}
+
+
+.calc {
+  
+  min-width: 350px;
+  min-height: 450px;
+  box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+  10px 10px 70px rgba(0,0,0,0.25),
+  inset -5px -5px  15px rgba(0,0,0,0.5),
+  inset 5px 5px 15px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  
+}
+
+.form {
+  
+  display: grid;  
+  grid-template-columns: repeat(4,80px);
+  
+  
+}
+
+#input {
+  
+   grid-column: span 4;
+   margin: 20px 0 ;
+   margin-left: 20px;
+   width: 96%;
+   height: 40px;
+   text-align: right;
+   font-size: 20px;
+   background: #3A9E39;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+}
+ 
+
+.contenedor {
+  
+  display: grid;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows: repeat( 4,100px );
+  margin: 0 20px; 
+  margin-top: 20px;
+  
+}
+
+button {
+  
+  width: 70px ;
+  height: 75px;
+  font-size: 20px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: inset -5px -5px  4px #ADADAD,
+  inset -5px -5px 4px #ADADAD;
+}
+
+
+.delete {
+  
+  
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  box-shadow: inset -5px -5px  4px #4082B8,
+  inset -5px -5px 4px #4082B8;
+  background: #5AB5FF;
+  
+}
+
+.op {
+  
+  background: #5AB5FF  ;
+  box-shadow: inset -5px -5px  4px #4082B8,
+  inset -5px -5px 4px #4082B8;
+  
+}
+
+
+.arrow {
+  
+  display: flex;  
+  width: 140px;
+  height: 40px;
+  background: white;
+  color: black;
+  grid-column: 4 ;
+  position: relative;
+  right: 50px ;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px ;
+  background: #5AB5FF;
+  box-shadow: inset -5px -5px  4px #4082B8,
+  inset -5px -5px 4px #4082B8;
+}
+
+.fa-arrow-left-long {
+  
+  font-size: 20px;
+  
+}
