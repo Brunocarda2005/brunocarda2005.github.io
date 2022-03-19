@@ -13,11 +13,13 @@ function curriculum (){
     if (confirmo == false) {   
       
       cv.setAttribute("href" , "cv español.docx");
-      
+      cv.removeEventlistener("click" , curriculum);      
+
     }else {
       
       cv.setAttribute("href" , "cv ingles.docx");
-      
+      cv.removeEventlistener("click" , curriculum);      
+
     }
     
 }
