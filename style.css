@@ -488,18 +488,6 @@ body {
   background:  linear-gradient(#5AB5FF, #0065FF)  ;  ;
 }
 
-.programin {
-  
-  
-  background: url(important/programming.svg);
-  width: 100% ;
-  height: 80%;
-  background-size: 100% 100%;
-  position: absolute;
-  bottom: 140%;
-  
-}
-
 .wave {
 
   background: url(important/wave.svg);
