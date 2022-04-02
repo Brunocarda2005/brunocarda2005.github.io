@@ -1,0 +1,883 @@
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  
+}
+
+
+body {
+  
+  min-height: 400vh;
+  
+}
+
+/*navegador*/
+
+.fondo {
+  
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: -400px;
+  position: relative;
+  z-index: -12;
+  
+
+}
+
+
+.nav {
+  
+  background: #A61B26;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 100;
+  
+  
+}
+
+
+.nav h1 {
+  
+  color: #F2D680;
+  margin: auto;
+  
+}
+
+.linea-bottom {
+  
+  width: 100vw;
+  height: 1.5px;
+  background: #4BBFBF;
+  position: absolute;
+  left: 0;
+  margin-top: 65px;
+  z-index: -1200;
+
+  
+}
+
+.logo-contenedor {
+  
+  position: absolute;
+  margin: 0 30px;
+  z-index: 10;
+  
+}
+
+.logo {
+  
+  width: 70px;
+  height: 70px;
+  
+}
+
+.menu-desplegable {
+  
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.menu-desplegable span {
+  
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  
+}
+
+.menu-desplegable span:nth-child(1) {
+  
+  transform: translateY(-7px);
+  width: 18px;
+  right: 12px;
+}
+
+.menu-desplegable span:nth-child(2) {
+  
+  transform: translateY(7px);
+  width: 10px;
+  right: 20px;
+}
+ 
+
+.nav-a {
+  
+ list-style: none;
+ text-align: right;
+ background:#A61B26 ;
+ display: inline-block;
+ position: fixed;
+ top:  58px;
+ right: -3000px;
+ width: 250px;
+ height: 650px;
+ border-bottom-left-radius: 10px;
+ z-index: -90;
+ opacity: 0;
+ 
+ 
+ 
+}
+
+
+
+.nav-a li {
+  
+  
+  margin: 40px 10px;
+
+
+  
+}
+
+.nav-a a {
+  
+  text-decoration: none;
+  color: #fff; 
+  padding: 10px;
+ 
+
+}
+
+
+.promociones {
+  
+  text-align: center;
+  color: #FFFFFF;
+  border-top: 1.5px solid #FFFFFF;  
+  padding-top: 7px; 
+  padding-bottom: 2px;
+  
+}
+
+.promociones-i {
+ 
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+
+
+.whatsapp {
+  
+  text-align: center;
+  
+}
+
+.whatsapp i {
+  
+  
+  text-align: center;
+  background: #F2D680;
+  padding: 3px;
+  border: 1px solid #41BFBF;
+  box-shadow: 2px -3px 2px inset rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: #A61B26;
+  padding-left: 4px;
+  
+}
+
+.menu-desplegable:hover > .nav-a {
+  
+  transform: translateX(-3000px);
+  transition: 1.5s;
+  animation-name: aparecer ;
+  animation-duration: 2.3s;
+  animation-fill-mode: forwards;
+    
+  
+}
+
+@keyframes aparecer {
+
+
+
+  100% {
+
+    opacity: 1;
+
+  }
+
+
+}
+
+
+/*inicio*/
+
+
+
+
+.lugar  {
+  
+  
+  position: relative;
+  top: 335px;
+  right: -30px;
+  font-size: 8px;
+  display: flex;
+  width: 30%
+}
+
+.lugar i {
+  
+  color: #F2D680;
+  margin-right: 5px;
+  font-size: 17px;
+  
+}
+
+.lugar li,
+.lugar a {
+  
+  color: #FFFFFF;
+  list-style: none;
+  text-decoration: none; 
+}
+
+
+
+
+.footer-principal {
+  
+  position: relative;
+  top: 330px;
+  color: #fff;
+  display: flex;
+  
+  
+}
+
+.footer-principal p {
+  
+  margin: auto;
+  background: #F2D680;
+  z-index: 10;
+  text-align: center;
+  color: #A61B26 ;
+  font-size: 13px;
+  border-radius: 10px;
+  width: 100px
+}
+
+.footer-principal span {
+  
+  margin:0;
+  
+}
+
+.redes-sociales  {
+  
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 20px;
+  
+  
+}
+
+.redes-sociales i {
+  
+  text-align: center;
+  background:#386DB3 ;
+  padding: 3px;
+  border: 2px solid #F2D680;
+  border-radius: 9px;
+  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  font-size: 15px;
+}
+
+.redes-sociales .fa-instagram {
+  
+  background-image: linear-gradient(225deg, #4F4993 40%,  #FF1361 70%, #FFF800 100%);
+  
+}
+
+.linea-bases {
+  
+  position: absolute;
+  top: 8px;
+  width: 100vw;
+  height: 1px;
+  background: #F2D680;
+  z-index: -10;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*quienes somos */
+
+.quienes-somos {
+  
+  position: relative;
+  top: 340px;
+  z-index: -1000;
+  min-height: 1000px;
+  color: #A61B26;
+  
+}
+
+
+.texto-quienes-somos {
+  
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+  width: 300px;
+  position: relative;
+  top: 100px;
+  
+}
+
+
+
+.linea-divisoria {
+  
+  display: flex;
+  width: 90%;
+  height: 1.5px;
+  background: #A61B26;
+  margin: auto;
+  position: relative;
+  top: 140px;
+
+  
+}
+
+.texto-secundario-abrimos {
+  
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.texto-secundario {
+  
+  position: relative;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 12px;
+
+  
+}
+
+.mision-vision {
+  
+  
+  display: grid;
+  grid-template-columns: 2;
+  position: relative;
+  top: 250px;
+  margin: 0 10px;
+  font-size: 10px;
+}
+
+
+.mision {
+  
+  grid-column: 1;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
+  
+  
+}
+
+.mision h3 {
+  
+  margin: auto;
+  margin-bottom: 5px;
+  font-size: 15px;
+  
+}
+
+.mision p {
+  
+  font-weight: 700;
+  color:#000000;
+  
+}
+
+.mision span {
+  
+  display: flex;
+  justify-content: start;
+  width: 70%;
+  height: 2px;
+  background: #A61B26;
+  margin-top: 15px;
+  border-radius: 20px;
+   
+}
+
+.vision {
+  
+  
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
+  
+  
+}
+
+
+.vision h3 {
+  
+  margin: auto;
+  margin-bottom: 5px;
+  font-size: 15px;
+  
+}
+
+.vision p {
+  
+  font-weight: 700;
+  color:#000000;
+
+}
+
+
+
+.vision span {
+
+  display: flex;
+  width: 70%;
+  height: 2px;
+  background: #A61B26;
+  margin-top: 15px;
+  border-radius: 20px;
+
+}
+
+
+
+.quines-somos-premios {
+  
+
+  color: #FFF;
+  position: relative;
+  top: 300px;
+
+  
+}
+
+.year-premio {
+  
+  margin: 10px 0 ;
+  font-weight: 100;
+
+  
+}
+
+.premios {
+  
+  width: 100%;
+  background: #F5F9FA;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  margin: auto;
+  padding: 10px;  
+
+  
+}
+
+.texto-premio {
+  
+  width: 70%;
+  font-size: 12px;
+}
+
+.otros-premios {
+ 
+ margin-left: 30px;
+ margin-top: 20px;
+ color: #000000;  
+ font-size: 12px ;
+ 
+}
+
+.santos-pizza-abrir {
+  
+  display: flex;
+  flex-direction: column;
+  background: #F5F9FA;
+  font-size: 10px;
+  width: 100vw;
+  height: 150px;
+  margin-top: 20px;
+  color: #000000;
+  
+}
+
+.santos-pizza-abrir img {
+  
+  width: 50%;
+  display: flex;
+  margin: auto;
+  margin-top: 0;
+}
+
+.abrir {
+  
+  margin: auto;
+  width: 50%;
+  overflow: hidden;
+  
+  
+}
+
+
+
+
+/*menu*/
+
+.menu {
+  
+  border-top: 2px solid #A61B26;
+  position: relative;
+  top: 340px;
+
+  
+}
+
+.menu-titulo {
+  
+  display: flex;
+  font-size: 30px;
+  margin: auto;
+  width: 199px;
+  z-index: 10;
+  background: #FFF;
+  padding: 7px;
+  margin-bottom: 40px;
+
+}
+
+.menu-titulo span {
+  
+  display: flex;
+  position: absolute;
+  left: 15%;
+  top: 25px;
+  width: 70%;
+  height: 3px;
+  background: #A61B26;
+  border-radius: 10px;
+  z-index: -10;
+  
+  
+}
+
+.menu p {
+  
+  text-align: center;
+  
+}
+
+.menus {
+  
+  display: flex;
+  justify-content: center;
+  
+}
+
+.menus div {
+  
+  margin-top: 60px;
+  margin-left: 5px;
+  background: red;
+  width: 40%;
+  height: 100px;
+  border-radius: 10px;
+  
+}
+
+/*experiencia*/
+
+
+.experienica {
+  
+  position: relative;
+  top: 500px;
+  height: 400px;
+  
+}
+
+.texto-experiencia h2{
+  
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 10px;
+  
+}
+
+.texto-experiencia p {
+  
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid #A71E1D;
+  padding-bottom: 20px;
+  
+}
+
+.experiencia-galeria-text {
+  
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  position: relative;
+  top: 30px;
+  
+}
+
+.flex-galeria {
+  
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.grid-galaria {
+  
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  position: relative;
+  top: 40px;
+
+  
+}
+
+
+.galeria-1 {
+  
+  grid-row: 1;
+  grid-column: 1;
+  
+}
+
+.galeria-2 {
+  
+  
+  grid-row: 1;
+  grid-column: 2;
+  
+  
+}
+
+.galeria-3 {
+  
+  
+  grid-row: 1;
+  grid-column: 3;
+  
+}
+
+.galeria-1 ,
+.galeria-2 ,
+.galeria-3 {
+  
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  
+}
+
+.galeria-1 i ,
+.galeria-2 i ,
+.galeria-3 i {
+
+
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  margin: 10px;
+  border: 1px solid #A71E1D;
+  padding-top: 30px;
+  color: #A71E1D;
+  
+}
+
+/*trabaja con nosotros*/
+
+.trabaja-con-nosotros {
+  
+  position: relative;
+  top: 700px;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form-texto {
+  
+  margin-bottom:  100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+    
+}
+
+.form-texto h4 {
+  
+  font-size: 25px;
+  height: 50px;
+  background:  #F5F9FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-bottom: 20px;   
+}
+
+
+.form-contenedor {
+  
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  grid-gap: 10px;
+
+  
+}
+
+.form-contenedor input{
+  
+  border: none;
+  border-bottom: 1px solid #A61B26;
+  padding: 3px;
+  
+  
+}
+
+
+
+#nombre { 
+  
+  grid-row: 1;
+  grid-column: 1;
+  
+}
+#apellido {
+  
+  grid-row: 1;
+  grid-column: 2;
+  
+}
+#nacionalidad {
+  
+  grid-row: 2;
+  grid-column: 1;
+  
+}
+#mail {
+  
+  grid-row: 2;
+  grid-column: 2;
+  
+}
+#cv {
+  
+  grid-row: 3;
+  grid-column: 1;
+  
+}
+#adjuntar {
+  
+  grid-row: 3;
+  grid-column: 1 ;
+  background: #A61B26; 
+  border:  none;
+  border-radius: 3px;
+  color: #FFFFFF;
+  
+}
+
+.form-enviar {
+  
+  
+  background: #A61B26; 
+  text-align: center;
+  border:  none;
+  border-radius: 3px;
+  padding: 5px;
+  color: #FFFFFF;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 10px;
+
+  
+}
+
+
+
+
+
+
+
+/*contactanos*/
+
+
+.contactanos {
+  
+  opacity: 0;
+  
+}
