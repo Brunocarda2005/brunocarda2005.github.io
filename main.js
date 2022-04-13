@@ -8,7 +8,7 @@ function curriculum (){
     let confirmo = confirm( "Do you want this resume in English?");
     if (confirmo == false) {
     
-      cv.setAttribute("href" , "cv español.pdf");
+      cv.setAttribute("href" , "cv ingles.pdf");
       cv.removeEventListener("click" , curriculum)
       
     }else {
