@@ -13,7 +13,7 @@ function curriculum (){
       
     }else {
     
-      cv.setAttribute("href" , "cv ingles.docx");
+      cv.setAttribute("href" , "cv ingles.pdf");
       cv.removeEventListener("click" , curriculum);      
       
     }
